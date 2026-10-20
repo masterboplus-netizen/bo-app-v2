@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бо 8.1</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007aff">
+</head>
+<body>
+    <h1>Бо 8.1 — Веб-панель</h1>
+    <p>Это чистая пересборка приложения.</p>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js?v=1', { updateViaCache: 'none' });
+        }
+    </script>
+</body>
+</html>
